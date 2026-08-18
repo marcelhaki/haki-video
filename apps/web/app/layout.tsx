@@ -42,32 +42,35 @@ const defaultFont = localFont({
 	preload: false,
 });
 
+const BRAND_NAME = "HAKI Video";
+const BRAND_URL = "https://video.usehaki.com";
+const BRAND_TITLE = "HAKI Video — Screen recordings, shared instantly.";
+const BRAND_DESCRIPTION =
+	"Record your screen and share it with a link. Private video sharing by HAKI.";
+
 export const metadata: Metadata = {
-	metadataBase: new URL("https://cap.so"),
-	title: "Cap — Beautiful screen recordings, owned by you.",
-	description:
-		"Cap is the open source alternative to Loom. Lightweight, powerful, and cross-platform. Record and share in seconds.",
+	metadataBase: new URL(BRAND_URL),
+	title: BRAND_TITLE,
+	description: BRAND_DESCRIPTION,
 	openGraph: {
-		title: "Cap — Beautiful screen recordings, owned by you.",
-		description:
-			"Cap is the open source alternative to Loom. Lightweight, powerful, and cross-platform. Record and share in seconds.",
+		title: BRAND_TITLE,
+		description: BRAND_DESCRIPTION,
 		type: "website",
-		url: "https://cap.so",
-		siteName: "Cap",
+		url: BRAND_URL,
+		siteName: BRAND_NAME,
 		images: [
 			{
 				url: "/api/og",
 				width: 1200,
 				height: 630,
-				alt: "Cap — Beautiful screen recordings, owned by you.",
+				alt: BRAND_TITLE,
 			},
 		],
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Cap — Beautiful screen recordings, owned by you.",
-		description:
-			"Cap is the open source alternative to Loom. Lightweight, powerful, and cross-platform. Record and share in seconds.",
+		title: BRAND_TITLE,
+		description: BRAND_DESCRIPTION,
 		images: ["/api/og"],
 	},
 };
