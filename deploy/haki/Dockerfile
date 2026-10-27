@@ -19,8 +19,15 @@ RUN pnpm i --no-frozen-lockfile
 # has to be redeclared here. packages/env/build.ts resolves NEXT_PUBLIC_WEB_URL
 # as WEB_URL ?? NEXT_PUBLIC_WEB_URL, which is what keeps the public origin from
 # being baked in as localhost.
+#
+# That fallback only works on the server. Next inlines NEXT_PUBLIC_* variables
+# into the browser bundle and nothing else, so in the client WEB_URL is always
+# undefined and NEXT_PUBLIC_WEB_URL has to carry the origin itself. Without it
+# the client env check throws "Invalid environment variables" and every
+# logged-in page fails to load.
 ARG WEB_URL
 ENV WEB_URL=$WEB_URL
+ENV NEXT_PUBLIC_WEB_URL=$WEB_URL
 ARG NEXT_PUBLIC_DOCKER_BUILD=true
 ENV NEXT_PUBLIC_DOCKER_BUILD=$NEXT_PUBLIC_DOCKER_BUILD
 
