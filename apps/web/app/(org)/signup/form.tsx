@@ -185,7 +185,7 @@ export function SignupForm() {
 					layout="position"
 					className="text-[16px] text-gray-10"
 				>
-					Screen recordings, shared instantly.
+					Beautiful screen recordings, owned by you.
 				</motion.p>
 			</motion.div>
 			<motion.div layout="position" className="flex flex-col space-y-3">

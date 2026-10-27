@@ -8,10 +8,10 @@ export default function NotFound() {
 			<p className="text-gray-400 text-lg md:text-xl">
 				Please contact the Cap team if this seems like a mistake:{" "}
 				<a
-					href="mailto:hello@haki.marketing"
+					href="mailto:hello@cap.so"
 					className="font-medium text-gray-500 text-lg md:text-xl hover:underline"
 				>
-					hello@haki.marketing
+					hello@cap.so
 				</a>
 			</p>
 		</div>

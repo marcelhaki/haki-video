@@ -41,7 +41,7 @@ export function PaymentFailed({
 								src={CAP_LOGO_URL}
 								width="40"
 								height="40"
-								alt="HAKI"
+								alt="Cap"
 								className="mx-auto my-0"
 							/>
 						</Section>

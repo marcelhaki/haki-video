@@ -20,7 +20,7 @@ export const createOrganizationSchema = () => ({
 	],
 	contactPoint: {
 		"@type": "ContactPoint",
-		email: "hello@haki.marketing",
+		email: "hello@cap.so",
 		contactType: "customer service",
 	},
 });

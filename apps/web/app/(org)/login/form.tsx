@@ -250,14 +250,14 @@ export function LoginForm() {
 					layout="position"
 					className="text-2xl font-semibold text-gray-12"
 				>
-					Sign in to HAKI Video
+					Sign in to Cap
 				</motion.h1>
 				<motion.p
 					key="subtitle"
 					layout="position"
 					className="text-[16px] text-gray-10"
 				>
-					Screen recordings, shared instantly.
+					Beautiful screen recordings, owned by you.
 				</motion.p>
 			</motion.div>
 			<motion.div layout="position" className="flex flex-col space-y-3">

@@ -250,7 +250,7 @@ export async function generateMetadata(
 				onNone: () =>
 					awaitRecording
 						? {
-								title: "HAKI Video: Preparing Video",
+								title: "Cap: Preparing Video",
 								description: "This recording is being made available.",
 								robots: "noindex, nofollow",
 							}
@@ -275,7 +275,7 @@ export async function generateMetadata(
 		Effect.catchTags({
 			PolicyDenied: () =>
 				Effect.succeed({
-					title: "HAKI Video: This video is restricted",
+					title: "Cap: This video is restricted",
 					description: "This video has restricted access.",
 					openGraph: {
 						images: [{ url: ogImageUrl, width: 1200, height: 630 }],
@@ -284,14 +284,14 @@ export async function generateMetadata(
 				}),
 			VerifyVideoPasswordError: () =>
 				Effect.succeed({
-					title: "HAKI Video: Password Protected Video",
+					title: "Cap: Password Protected Video",
 					description: "This video is password protected.",
 					openGraph: {
 						images: [{ url: ogImageUrl, width: 1200, height: 630 }],
 					},
 					twitter: {
 						card: "summary_large_image",
-						title: "HAKI Video: Password Protected Video",
+						title: "Cap: Password Protected Video",
 						description: "This video is password protected.",
 						images: [ogImageUrl],
 					},
